@@ -6,13 +6,24 @@
     ],
     "settings": {
 
+        // ----------------------- Windows -----------------------
+
         "terminal.integrated.defaultProfile.windows": "Git Bash",
+        
+        // ------------------------ Linux ------------------------
+        
+        "terminal.integrated.env.linux": {
+            // "RUSTFLAGS": "-C link-arg=-Wl,-rpath,$HOME/miniconda3/lib"
+        },
+
         "terminal.integrated.profiles.linux": {
             "bash": {
                 "path": "bash",
                 // "args": ["-c","-i","source ./Run.sh && exec bash"]
             }
         },
+
+        // ------------------- Latex Workshop --------------------
 
         "latex-workshop.latex.outDir": "latex_out",
         "latex-workshop.latex.tools": [
