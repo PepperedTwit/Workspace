@@ -14,17 +14,17 @@
             }
         },
 
-        "latex-workshop.latex.outDir": "%WORKSPACE_FOLDER%/src/latex_out",
+        "latex-workshop.latex.outDir": "latex_out",
         "latex-workshop.latex.tools": [
             {
                 "name": "knitr",
                 "command": "Rscript",
-                "args": ["-e", "knitr::knit('%DOCFILE_EXT%', output='%WORKSPACE_FOLDER%/src/latex_out/%DOCFILE%.tex')",]
+                "args": ["-e", "knitr::knit('%DOCFILE_EXT%', output='latex_out/%DOCFILE%.tex')",]
             },
             {
                 "name": "latexmk",
                 "command": "latexmk",
-                "args": ["-pdf", "-output-directory=%WORKSPACE_FOLDER%/src/latex_out", "%DOCFILE%.tex",]
+                "args": ["-pdf", "-output-directory=latex_out", "%DOCFILE%.tex",]
             }, 
         ],
         "latex-workshop.latex.recipes": [

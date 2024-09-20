@@ -39,7 +39,7 @@ knitr::opts_chunk$set(fig.path='assets/')
 \begin{titlepage}
 \center{}
 \textsc{\LARGE The University of Newcastle}\\[0.5cm]
-\textsc{\large College of -fedwf7dvdf6-- }\\[0.5cm]
+\textsc{\large College of --- }\\[0.5cm]
 \textsc{\large School of --- }\\[0.5cm]
 \includegraphics[scale=.3]{assets/_uni_logo.png}\\[0.5cm]
 \textsc{\Large CourseName }\\[0.3cm]
