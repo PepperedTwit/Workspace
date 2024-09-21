@@ -24,7 +24,9 @@
 \geometry{left=1.5cm, right=1.5cm, top=2cm, bottom=2cm} % Set the page to landscape with custom margins
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}  % Defines a new command for the horizontal lines, change thickness here
 \newcommand{\SubSec}[1]{\vspace{1em}\noindent\textsc{\textbf{#1}}\vspace{0.5em} \\} % Custom command to mimic subsections
-\newcommand{\Answer}{\vspace{0.2cm}\textbf{Answer:}\vspace{0.2cm}}
+\newcommand{\Answer}{\subsection*{Response:}} % Custom command to add response section
+\newcommand{\PSkip}{\vspace{1em}} % Custom command to add vertical space
+\newcommand{\Bold}[1]{\PSkip\textbf{#1}} % Custom command to bold text
 
 % R Libraries import
 <<setup, include=FALSE>>=
