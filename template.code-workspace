@@ -33,6 +33,17 @@
                 "args": ["-e", "knitr::knit('%DOCFILE_EXT%', output='latex_out/%DOCFILE%.tex')",]
             },
             {
+                "name": "xelatex",
+                "command": "xelatex",
+                "args": [
+                    "-synctex=1",
+                    "-interaction=nonstopmode",
+                    "-file-line-error",
+                    "-output-directory=latex_out",
+                    "latex_out/%DOCFILE%"
+                ]
+            },
+            {
                 "name": "latexmk",
                 "command": "latexmk",
                 "args": ["-pdf", "-output-directory=latex_out", "%DOCFILE%.tex",]
@@ -42,9 +53,13 @@
             {
                 "name": "build_clean_latex",
                 "tools": ["knitr", "latexmk",],
+            },
+            {
+                "name": "xelatex_build",
+                "tools": ["knitr", "xelatex"]
             }
         ],
-        "latex-workshop.latex.recipe.default": "build_clean_latex"
+        "latex-workshop.latex.recipe.default": "xelatex_build"
 
     }
 }
