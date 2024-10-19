@@ -36,9 +36,19 @@
 \newcommand{\PSkip}{\vspace{1em}} % Custom command to add vertical space
 \newcommand{\Bold}[1]{\PSkip\textbf{#1}} % Custom command to bold text
 
-% R Libraries import
+% R Libraries import and custom helper functions
 <<setup, include=FALSE, size='10'>>=
 knitr::opts_chunk$set(fig.path='assets/')
+
+# Used for importing data frame contents into LaTeX tables
+format_df <- function(df) {
+    out <- ""  # Initialize the output string
+    for (i in 1:nrow(df)) {
+        row <- paste(df[i, ], collapse = " & ")  # Format the current row
+        out <- paste0(out, row, " \\\\ ")  # Append the formatted row with LaTeX row break
+    }
+    return(out)
+}
 @
 
 \begin{document}
