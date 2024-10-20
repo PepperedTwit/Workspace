@@ -64,21 +64,108 @@
     }
 }
 
-//  ------------ Generic File structure ------------
-//  SomeProjectname (Workspace folder)
-//  ├── SomeProjectname.code-workspace
-//  ├── dat
-//  │   └── Raw data files etc.
-//  ├── src
-//  │   ├── assets
-//  │   │   ├── _uni_logo.png
-//  │   │   ├── _biblo.bib
-//  │   │   └── Processed data files etc.
-//  │   ├── latex
-//  │   │   ├── project.tex
-//  │   │   ├── project.pdf
-//  │   │   └── Other latex files etc.
-//  │   ├── project.Rnw
-//  │   ├── main.rs
-//  │   └── etc.
-//  ------------ Generic File structure ------------
+
+/*
+------------------ Generic File structure ------------------
+ SomeProjectname (Workspace folder)
+ ├── SomeProjectname.code-workspace
+ ├── dat
+ │   └── Raw data files etc.
+ ├── src
+ │   ├── assets
+ │   │   ├── _uni_logo.png
+ │   │   ├── _biblo.bib
+ │   │   └── Processed data files etc.
+ │   ├── latex
+ │   │   ├── project.tex
+ │   │   ├── project.pdf
+ │   │   └── Other latex files etc.
+ │   ├── project.Rnw
+ │   ├── main.rs
+ │   └── etc.
+ ------------------ Generic File structure ------------------
+*/
+/*
+-----------------------  Git Commands -----------------------
+
+    General Workflow
+
+        # Initialize a new Git repository
+        git init
+
+        # Stage all changes for commit
+        git add .
+
+        # Commit changes with a message
+        git commit -m "Initial commit"
+
+        # Add a remote repository (URL to your GitHub/GitLab repository)
+        git remote add origin <url>
+
+        # Push changes to the 'main' branch on the remote repository
+        git push -u origin main
+
+
+    Forking a Project (Sync your project with the upstream repository)
+
+        # Add the upstream remote (the original repository you forked from)
+        git remote add upstream <url> 
+
+        # Fetch changes from the upstream repository
+        git fetch upstream
+
+        # Merge the upstream's main branch into your current branch
+        git merge upstream/main
+
+        # Optional: Push merged changes to your forked repository
+        git push origin main
+
+
+    Working with Branches
+
+        # Create a new branch and switch to it
+        git checkout -b <branch-name>
+
+        # Switch to an existing branch
+        git checkout <branch-name>
+
+        # Push the new branch to the remote repository
+        git push -u origin <branch-name>
+
+        # Merge changes from another branch into the current branch
+        git merge <branch-name>
+
+        # Delete a branch locally
+        git branch -d <branch-name>
+
+        # Delete a branch remotely
+        git push origin --delete <branch-name>
+
+
+    Updating Your Local Branch
+
+        # Fetch the latest changes from the remote repository
+        git fetch origin
+
+        # Merge the changes into your current branch
+        git merge origin/main
+
+        # Alternatively, rebase your current branch onto the latest main
+        git rebase origin/main
+
+
+    Handling Merge Conflicts
+
+        # After Git reports conflicts, open the conflicted files and resolve them
+
+        # Stage the resolved files
+        git add <file-name>
+
+        # Continue with the merge or rebase after resolving conflicts
+        git commit (for merges)
+        git rebase --continue (for rebases)
+
+
+-----------------------  Git Commands -----------------------
+*/
+
