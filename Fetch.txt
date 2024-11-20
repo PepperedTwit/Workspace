@@ -1,0 +1,12 @@
+# Initialize local repository
+git init
+
+# Add the online repository as a remote
+git remote add upstream https://github.com/PepperedTwit/Workspace.git
+
+# Prevent accidental pushes
+git remote set-url --push upstream no_push
+
+# Fetch and merge updates
+git fetch upstream
+git merge upstream/main
