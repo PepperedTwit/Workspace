@@ -4,4 +4,4 @@ version = "1.70.0"
 edition = "2021"
 
 [dependencies]
-util = {path = "/mnt/Master/Documents/Rust/Rust_Generics"}
+util = {path = "/mnt/Master/Documents/Code/Rust/Rust_Generics"}

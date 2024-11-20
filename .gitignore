@@ -1,4 +1,5 @@
-latex_out/
-dat/
-assets/
+dat/*
+!dat/testo.txt
+src/assets/*
+src/latex_out/*
 Cargo.lock
